@@ -1,7 +1,11 @@
 ## Activity 6: Stacks and Queues
-1. Stack Demonstration Illustration
-2. Queue Demonstration Illustration
-3. Under and Overflow checking in Queue
+1.Stack Demonstration Illustration:
+![Stack Demonstration Illustration](https://github.com/sps456/CISC187-stuff/blob/main/Screenshot%202026-03-15%20133500.png)
+
+2.Queue Demonstration Illustration:
+![Queue Demonstration Illustration](https://github.com/sps456/CISC187-stuff/blob/main/Screenshot%202026-03-15%20143339.png)
+
+3.Under and Overflow checking in Queue
 
 Updated Pseudocode of Enqueue:
 ```
@@ -24,7 +28,7 @@ else
   else Q.head = Q.head + 1
   return x
 ```
-4. Pop and Push operations for head and tail of a Deque
+4.Pop and Push operations for head and tail of a Deque
 
 The Pop Head and Push Tail methods for a deque will look pretty much identical to the Enqueue and Dequeue methods for a queue:
 
@@ -76,3 +80,4 @@ else
     Q.head = Q.head - 1
     Q[Q.head] = x
 ```
+The assignment page made no mention of a video explanation, so no vid this week I guess
