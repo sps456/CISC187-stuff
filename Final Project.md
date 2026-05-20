@@ -63,3 +63,26 @@ int main()
 ```
 The compare sports funtion is out O(N+M) function which returns a vector containing only the names of the players who play both sports and the code as a whole outputs those names (Jill Huang and Wanda Vakulskas).
 # Task 2
+In order to determine missing value with a time complexity of O(N), we can loop through our array summing up each of its elements, then subtract that from our expected sum of integers from 0 to N, which is given by the formula n(n+1)/2.
+Task 2 Code:
+```c++
+#include <iostream>
+#include <iterator>
+using namespace std;
+
+int missingInteger(int numbers[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size;  i++) {
+        sum += numbers[i];
+    }
+    return size * (size+1) / 2 - sum;
+}
+int main()
+{
+    int numbers[] = {2,3,0,6,1,5};
+    cout << missingInteger(numbers,size(numbers));
+    return 0;
+}
+```
+The missingInteger function is our O(N) function to determine which integer is missing from the array and the main method tests this function with a sample array, which correctly returns 4 as the missing integer.
+# Task 3
